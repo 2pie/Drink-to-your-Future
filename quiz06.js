@@ -139,7 +139,7 @@ const color_critical =    "#91166D";
 
             // pScore is percentage. Fscore is total
             let pScore = new_base * 100/(range);
-            pScore = 0;
+            //pScore = 0;
 
 
 
