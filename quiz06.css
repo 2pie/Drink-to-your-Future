@@ -1,0 +1,842 @@
+
+/* This thing needs a proper structure- so this is the index
+1. body
+2. variables
+3. landing page
+
+4. The quiz component section
+5. button
+6. result section
+7. links
+
+also- tab is alright- mobile needs work
+
+ */
+
+
+ :root {
+
+    /* main colors */
+    --main-primary-yellow: #FDBE1C;
+    --main-primary-white1: #FFFFFF;
+    --main-primary-white2: #fcfcfc;
+    --main-primary-white3: #f9f9f9;
+
+
+    /* gradients for question----puple- red- yellow */
+    --blend_violet: linear-gradient(to right, #A4397C 0%, #9D77C0 100%);
+
+    --blend_rose: linear-gradient(to right, #A40E4D 0%, #EB9090 100%);
+    --blend_heat: linear-gradient(to right, #AB3C3C 0%, #FF747C 100%);
+    --blend_blood: linear-gradient(to right, #911F1F 0%, #DC5908 100%);
+
+    --blend_sun: linear-gradient(to right, #ECB37F 0%, #FFE03A 100%);
+    --blend_desert: linear-gradient(to right, #F59052 0%, #C55637 100%);
+
+/* option color choices - variable exchange isin htm for each option- TREAD WITH CAUTION */
+
+    --option-color: #cfd7fb;
+    --option-color-tint: #e5eaff33;
+
+    --option-purple: hsl(281, 100%, 87%);
+    --option-purple-tint: #F5E8FF;
+    --option-red: #ffbde0;
+    --option-red-tint: #FFDAEB;
+    --option-yellow: hsl(43, 98%, 55%);
+    --option-yellow-tint: #fff4e5;
+
+
+/* state colors- minimal is also base- not in use here but in js- where varibes are again declared */
+
+    --state-minimal: #B5E553;
+    --state-low: #5EEE99;
+    --state-slight: #49E2F0;
+    --state-moderate: #66C0FD;
+    --state-elevated: #A28FFF;
+    --state-high: #E4AFFD;
+    --state-significant: #FD9BB2;
+    --state-severe: #BC3B64;
+    --state-critical: #91166D;
+
+  }
+
+
+body {
+    /* background-color: aqua; */
+    /* align-items: center; */
+    scroll-behavior: smooth;
+    margin: 0px 20px;
+
+
+    background-image: url("assets/pattern4.svg");
+    background-repeat: repeat;
+    /* opacity: 0.5; */
+    /* max-width: 960px; */
+     /* margin-left: 80px; */
+     /* margin-top: 40px ; */
+
+}
+
+.landing {
+    position: relative;
+    top: 40px;
+    display: flex;
+    /* background-color: blue; */
+    width: 100%;
+    height: 750px;
+    /* this height is essentially the boss of the header section */
+    align-items: center;
+
+}
+
+
+.landing1 {
+    display: flex;
+    width: 50%;
+
+}
+
+.cheer_img {
+    position: relative;
+    top: -80px;
+    /* height: 650px;  */
+    width: 100%;
+    rotate: 15deg; 
+    /* chan8e rotation later */
+
+}
+
+
+
+.landing2 {
+
+    /* background-color: rgb(247, 222, 245); */
+    width: 50%;
+    /* height: 100%; */
+    align-content: center;
+    z-index: 1;
+}
+
+
+.line1 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 40pt;
+}
+
+.line2 {
+    position: relative;
+    font-family: 'Courgette', cursive;
+    font-size: 100pt;
+    color: var(--main-primary-yellow);
+    left: -10px;
+    top: -15px;
+
+    line-height: 100pt;
+
+}
+
+.line3 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 20pt;
+ 
+    /* line-height: 70pt; */
+}
+
+
+
+.line4 {
+    color: var(--main-primary-yellow);
+}
+
+
+
+
+
+
+
+
+/* ------------------MOB---------------------MOB--------------------------------MOB----------------------------MOB-------------MOB------------------------- */
+
+@media only screen and (max-width: 768px) {
+  
+.landing {
+    top: 40px;
+    display: block;
+    /* background-color: blue; */
+    width: 620px;
+    height: fit-content;
+}
+
+
+.landing1 {
+    display: block;
+    height: 350px;
+    width: 620px;
+
+}
+
+.cheer_img {
+    position: absolute;
+    top: 140px;
+    left: 130px;
+    width: 420px;
+    height: 420px;
+}
+
+
+
+.landing2 {
+
+    display: block;
+    width: 100%;
+    height: 900px;
+    text-align: center;
+
+}
+
+
+.line1 {
+    font-size: 40pt;
+}
+
+.line2 {
+    left: 0px;
+    top: 0px;
+    line-height: 50pt;
+}
+
+.line3 {
+    position: relative;
+    top: -18px;
+}
+
+
+
+.line4 {
+    color: var(--main-primary-yellow);
+} 
+    
+
+    
+} 
+/* ------------------MOB---------------------MOB--------------------------------MOB----------------------------MOB-------------MOB------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+/* Body centering unit-----------------------V----------V------------VVVVV- IMPORTANT--------V----------V------------------- */
+
+
+.main_body {
+    max-width: 1000px;
+    min-width: 600px;
+    margin: 0 auto;
+}
+
+
+/* Mobile__________----------------____________________------------------___________________ paused production*/
+
+
+/* SECTION 5: QUIZ COMPONENT SECTION___--------------______________________------------------___________*/
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------- */
+
+ .mainQuestion {
+    /* the main question asked b4 the quiz- pretty usless but needed */
+    margin-top: 60px;
+    margin-bottom: 40px;
+    padding-top: 20px;
+    font-family: 'courgette', sans-serif;
+    line-height: 16pt;
+    font-size: 11pt;
+    letter-spacing: 1px;
+    font-weight: 0;
+    color: #808080;
+ }
+ 
+ .question_block {
+    /* each question group- pretty important but invsible */
+    margin-bottom: 72px;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+    max-width: 100%;
+    height: fit-content;
+ 
+    border-radius: 10px;
+    
+}
+
+
+.question {
+    /* background-image: each to its own- attached via <p>- variabl is used */
+    padding: 10px;   
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 700;
+    color: var(--main-primary-white1);
+    /* line-height: 2; */
+}
+
+/* ______________Style for option boxes */
+
+
+.option {
+    display: inline-block;
+    /* width: 200px; */
+    width: fit-content;
+    min-height: 20px;
+    height: fit-content;
+    border: 2px solid var(--main-primary-white3);
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 50;
+    font-family: 'Martel Sans', sans-serif;
+    font-weight: 500;
+    background: var(--main-primary-white2);
+
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    transition: 0.8s ease;
+    cursor: pointer;
+}
+
+
+
+/* _____________________Hover effect for option- general*/
+
+.option:hover {
+    border-color: transparent;
+    background: var(--option-color-tint);
+    /* box-shadow: 0px 0px 2px 1px rgb(247, 219, 236); */
+}
+
+.option:active {
+
+    background: var(--option-color-tint);
+    box-shadow: 0px 0px 10px 1px rgb(239, 244, 244);
+}
+
+
+.option.selected {
+    border: 2px solid transparent;
+    background: var(--option-color-tint);
+    border-color: var(--option-color);
+    /* box-shadow: 0px 0px 5px 2px lightblue; */
+    
+}
+
+
+
+
+/* CLOTHSTORE-----Sizes for option variations- small medium and large */
+.verySmall {
+    width: 160.8px;
+    text-align: center;
+}
+
+
+.small {
+    width: 210.5px;
+    text-align: center;
+}
+
+.medium {
+    width: 459px;
+}
+
+.large {
+    /* width:auto; */
+    width: 960px;
+}
+
+
+
+/* MBILEING-------------------------MOBLING----------------------------MOBLING */
+
+
+@media only screen and (max-width: 768px) {
+
+    .main_body {
+        width: 610px;
+        margin: 0px 10px;
+
+    }
+
+    .mainQuestion {
+        margin: 20px 20px ;
+        line-height: 20pt;
+        font-size: 14pt;
+     }
+     
+     .question_block {
+        margin: 72px 10px ;        
+    }
+    
+    
+    .question {
+        padding: 10px 15px;   
+        margin-bottom: 15px;
+
+        font-weight: 500s;
+        font-size: 16pt;
+    }
+    
+    /* Style for option boxes */
+     
+    .option {
+        padding: 16px 10px;
+        
+        border: 3px solid var(--main-primary-white3);
+        font-size: 18px;
+        font-weight: 550;
+    
+
+    }
+
+    
+    /* CLOTHSTORE-----Sizes for option variations- small medium and large */
+    .verySmall {
+        width: 158px;
+        text-align: center;
+    }
+    
+    
+    .small {
+        width: 257px;
+        text-align: center;
+    }
+    
+    .medium {
+        width: 555px;
+    }
+    
+    .large {
+        /* width:auto; */
+        width: 555px;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Buttons____________________________-------------------------------------------------------------- */
+
+.button2 {
+    padding: 8pt;
+    margin: 30px 0px;
+    width: 350px;
+
+    border-radius: 8px;
+    border: 2pt solid var(--main-primary-yellow);
+    background-color: var(--main-primary-white1);
+
+    font-family: 'Kanit', sans-serif;
+    font-size: 12pt;
+    font-weight: 500;
+ 
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+    cursor: pointer;
+}
+
+.button2:hover {
+    background-color: var(--main-primary-yellow);
+    transition: 0.3s ease;
+}
+
+.button2:active {
+    /* border-color: #808080 ; */
+    background-color: #fdcf16;
+    transition: 0.3s ease;
+}
+
+
+
+
+
+/* SECTON 6:  results and score card part-------   -----------------------------------------------------------------------  */
+
+/* .doneButton {
+    display: block;
+} */
+
+.score_card_container {
+    /* display: flex;  */
+    display: none;
+
+    /* height: 400px; */
+    padding: 0px 15px; 
+    margin: 60px 2px;
+
+    justify-content: center;
+    align-items: flex-start;   
+}
+
+/* left side part */
+
+
+.img_result_container{
+    /* float:inline-start; */
+
+    display: inline-block;
+    width: 300px;
+    background-color: #fefefe;
+    margin: 10px;
+    margin-right: 30px;
+    border-radius: 8pt;
+
+    box-shadow: 0px 00px 60px 2px var(--state-minimal);
+    /* text-align: left; */
+}
+
+.img_container {
+    width: 280px;
+    height: 280px;
+
+    border-radius: 8pt;
+}
+
+.result_img {
+    width: 100%;
+    border-radius: 8pt;
+}
+
+.result_percent {
+    font-family: 'Kanit', sans-serif;
+    font-size: 18pt;
+    font-weight: 600;
+    margin: 10px 0px;
+}
+.result_classification_left {
+    font-family: 'Kanit', sans-serif;
+    font-size: 14pt;
+    margin-top: 5px;
+    margin-bottom: 18px;   
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--state-minimal);
+}
+
+
+/* left side end */
+
+/* right side sart */
+.message_container {
+    display: inline-block;
+    /* height: 320px; */
+    width: 400px;
+
+    margin: 10px;
+
+    text-align: left;
+
+
+
+    
+}
+
+.result_classification_right {
+    font-family: 'Kanit', sans-serif;
+    font-size: 14pt;
+    margin-top: 25px;
+    margin-bottom: 18px;   
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--state-minimal);
+}
+
+.result_message {
+    font-family: 'courgette', sans-serif;
+    line-height: 16pt;
+    font-size: 11pt;
+    letter-spacing: 1px;
+    font-weight: 0;
+    color: #808080;
+}
+
+.space {
+    height: 0px;
+
+}
+
+/* END OF SCORE CARD________________________________________________________________________ */
+
+
+
+
+/* ------------------MOB---------------------MOB--------------------------------MOB----------------------------MOB-------------MOB------------------------- */
+
+@media only screen and (max-width: 768px) {
+    .button2 {
+        padding: 16pt;
+        width: 500px;    
+  
+        font-size: 16pt;
+        font-weight: 600;
+    }
+
+
+/* score card section */
+
+
+
+    /* left side part */
+    
+    .img_result_container{
+        width: 350px;
+    }
+    
+
+    
+    
+    .result_percent {
+        font-size: 20pt;
+    }
+    .result_classification_left {
+        font-size: 16pt;
+        margin-bottom: 20px;   
+    }
+    
+    
+    /* left side end */
+    /* right side sart */
+
+    .message_container {
+
+        text-align: center;
+    
+    
+    
+        
+    }
+    
+    .result_classification_right {
+        font-size: 18pt;
+        margin-top: 40px;
+        font-weight: 600;
+        margin-bottom: 18px;   
+    }
+    
+    .result_message {
+        line-height: 24pt;
+        font-size: 16pt;
+        font-weight: 100;
+    }
+}
+ 
+/* ------------------MOB---------------------MOB--------------------------------MOB----------------------------MOB-------------MOB------------------------- */
+
+
+
+
+
+
+/* START OF LINKS________________________________________________________________________ */
+
+.container {
+    display: block;
+    /* display: none; */
+    margin: 50px 0px;
+ 
+  }
+
+  .container .heading {
+    width: 100%;
+    text-align: left;
+    padding: 5px;
+    margin: 0px 5px;
+
+    font-family: 'Kanit', sans-serif;
+    font-size: 16pt;
+    margin-top: 25px;
+    margin-bottom: 18px;   
+    /* text-transform: uppercase; */
+    /* letter-spacing: 5px; */
+    color: #292929;
+
+    /* background-color: #eea2a2; */
+    border-radius: 4px;
+  }
+  
+  .inner-div {
+    display: inline-block;
+    width: 30%; /* Set a fixed width for each inner div (adjust as needed) */
+    border: 1px solid transparent; 
+    /* padding: 10px;  */
+    margin: 5px 8px; 
+    border-radius: 8px;
+    /* background-color: #49E2F0; */
+    
+
+    cursor: pointer;
+  }
+
+  .container .links{
+    text-decoration: none;
+    color: #292929;
+    font-family: 'Kanit', sans-serif;
+    font-size: 11pt;
+    letter-spacing: 1px;
+  }
+
+  .container .image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+  } 
+
+  .inner-div:hover {
+    text-decoration: underline;
+    filter: brightness(0.6);
+    transition: 0.6s;
+   }
+
+ 
+
+  .inner-div:active {
+    text-decoration: underline;
+    filter: brightness(0.6);
+    transition: 0.6s;
+    border: 1px solid var(--main-primary-white3); 
+   
+  }
+
+
+
+
+/* ------------------MOB---------------------MOB--------------------------------MOB----------------------------MOB-------------MOB------------------------- */
+
+@media only screen and (max-width: 768px) {
+    
+
+    
+      .container .heading {
+        text-align: center;
+        padding: 15px;
+        margin: 0px 10px;
+        font-size: 18pt;
+      }
+      
+      .inner-div {
+        width: 500px; 
+        margin: 20px 0px; 
+      }
+    
+      .container .links{
+        font-size: 16pt;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+    
+      .container .image {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        border-radius: 8px;
+      } 
+
+ 
+}
+ 
+/* ------------------MOB---------------------MOB--------------------------------MOB----------------------------MOB-------------MOB------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .result {
+    height: fit-content;
+    max-width: 850px;
+    padding: 20px;
+    margin-top: 30px;
+
+    border-radius: 10px;
+    background-color: rgb(252, 252, 252);
+    box-shadow: 0px 0px 5px 2px rgb(237, 239, 246);
+    display: none;
+}
+
+.score {
+    display: inline-block;
+    min-width: 250px;
+    padding: 20px;
+    margin-top: 30px;
+    height:fit-content ;
+    margin: 10px;
+
+    font-size: 24px;
+
+    color: rgb(87, 174, 118);
+    border-radius: 10px;
+    background-color: rgb(162, 74, 74); 
+    box-shadow: 0px 0px 5px 2px rgb(237, 239, 246);
+}
+
+
+.message {
+    display: inline-block;
+    
+    width: 470px;
+    
+    padding: 20px;
+    margin-top: 30px;
+    margin: 10px;
+    font-size: 24px;
+
+    color: rgb(60, 60, 60);
+    border-radius: 10px;
+    background-color: rgb(162, 74, 74); 
+    box-shadow: 0px 0px 5px 2px rgb(237, 239, 246);
+}
+
+ */

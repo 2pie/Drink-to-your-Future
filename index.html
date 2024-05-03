@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Two Section Quiz</title>
+<!-- style link -->
+<link rel="stylesheet" href="quiz06.css">
+
+<!-- Fonts imported -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kanit">
+
+<link rel="stylesheet" href="https://fonts.google.com/css?family=Courgette">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Martel+Sans">
+
+
+</head>
+<body>
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+<!-- --------------------------------Landing page -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+<div id="landing" class="landing">
+    <div class="landing1"><img class="cheer_img" src="assets/beer.png">  </div>
+    <div class="landing2">
+
+        <div class="line1">A Toast To Your</div><br>
+        <div class="line2">Future</div><br><br><br><br>
+        <div class="line3">Does your path lead to <span class="line4">Alcohol Addiction </span>  ?</div><br>
+        <button id="quizButton" class="button2">Take quiz</button>
+        <!-- <span class="line4">Alcohol Addiction ?</span> -->
+    </div>
+
+</div>
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+<!-- --------------------------------section body part centally -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+<div class="main_body">
+
+
+
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+<!-- --------------------------------section QUIZ PART -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+
+<!-- Note -->
+
+<!-- <div class="note">
+    <div class="heading"> Note</div>
+    <div class="content">This quiz is designed to help you understand your potential risk of developing an alcohol addiction in the future. It's important to remember that this is just an assessment, and your individual risk factors may vary. Regardless of your score, prioritizing healthy habits and seeking support if needed can always be beneficial. </div>
+</div>
+ -->
+
+
+
+<div id="mainQuestion" class="mainQuestion">This quiz is designed to help you understand your potential risk of developing an alcohol addiction in the future. Select the options which best suites your circumstances, and the programme will do the rest</div>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+<!-- --------------------------------Cluster 1 - self - 5 questions --------------------->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+
+<div id="section1">
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_violet)">Question 1: Please select your gender.</p>
+        <div class="option" data-points="2" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);"><div class="small">Female</div></div>
+        <div class="option" data-points="4" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);"><div class="small">Male</div></div>
+        <div class="option" data-points="6" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);"><div class="small">Others</div></div>
+    </div>
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_sun)">Question 2: What is your general attitude towards alcohol?</p>
+        <div class="option" data-points="03" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="large">I avoid alcohol completely and prefer not to be around it</div></div>
+        <div class="option" data-points="06" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="large">I drink occasionally but make sure to consume responsibly</div></div>
+        <div class="option" data-points="09" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="large">I enjoy drinking moderately and see it as a social activity</div></div>
+        <div class="option" data-points="12" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="large">I drink frequently and don't see any harm in it</div></div>
+        <div class="option" data-points="15" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="large">I actively seek out opportunities to drink and often prioritize it over other activities</div></div>
+    </div>
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_rose)">Question 3: Please select your age - when you first drank alcohol.</p>
+        <div class="option" data-points="02" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">Never Consumed</div></div>
+        <div class="option" data-points="04" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">25 and above</div></div>
+        <div class="option" data-points="06" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">22 - 24</div></div>
+        <div class="option" data-points="08" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">20 - 21</div></div>
+        <div class="option" data-points="10" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">18 - 19</div></div>
+        <div class="option" data-points="12" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">15 - 17</div></div>
+        <div class="option" data-points="14" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">12 - 14</div></div>
+        <div class="option" data-points="16" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">9 - 11</div></div>
+        <div class="option" data-points="18" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">8 and below</div></div>
+    </div>
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_desert)">Question 4: Among your good or close friends, how many regularly consume alcohol?</p>
+        <div class="option" data-points="02"  style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="verySmall">None of them</div></div>
+        <div class="option" data-points="04"  style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="verySmall">Very few of them</div></div>
+        <div class="option" data-points="06"  style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="verySmall">Some of them</div></div>
+        <div class="option" data-points="08"  style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="verySmall">Most of them</div></div>
+        <div class="option" data-points="10" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="verySmall">All of them</div></div>
+    </div>
+
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_blood)">Question 5: How do you perceive your workload and stress level?</p>
+        <div class="option" data-points="1" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="medium">Very manageable, I rarely feel stressed.</div></div>
+        <div class="option" data-points="2" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="medium">Manageable most of the time, but I occasionally feel stressed.</div></div>
+        <div class="option" data-points="3" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="medium">Somewhat overwhelming, I frequently feel stressed.</div></div>
+        <div class="option" data-points="4" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="medium">Extremely overwhelming, I consistently feel stressed.</div></div>
+    </div>
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+<!-- --------------------------------Cluster 2 - alcohol related - 2 questions --------------------->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_violet)">Question 6: Who Introduced you to drinking? How were you introduced to drinking?</p>
+        <div class="option" data-points="2" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="small">Don't drink</div></div>
+        <div class="option" data-points="4" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="small">Self</div></div>
+        <div class="option" data-points="6" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="small">Siblings/ cousins</div></div>
+        <div class="option" data-points="8" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="small">Parents</div></div>
+        <div class="option" data-points="10" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="small">Friends</div></div>
+        <div class="option" data-points="12" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="small">Relatives</div></div>
+        <div class="option" data-points="14" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="small">Seniors</div></div>
+    </div>
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_heat)">Question 7: In most cases, how drunk do you get, when you drink?</p>
+        <div class="option" data-points="03"style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="medium">Don't drink</div></div>
+        <div class="option" data-points="06"style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="medium">Not a lot (Don't get drunk)</div></div>
+        <div class="option" data-points="09"style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="medium">Little (Tipsy)</div></div>
+        <div class="option" data-points="12"style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="medium">Moderate (The room is Tilting)</div></div>
+        <div class="option" data-points="15"style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="medium">High (What is balance?)</div></div>
+        <div class="option" data-points="18"style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="medium">Heavy (Who am I? Where Am I?)</div></div>
+        <div class="option" data-points="21"style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="medium">Excess (Blackout)</div></div>
+
+    </div>
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_sun)">Question 8: How frequently do you drink?</p>
+        <div class="option" data-points="1" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="small">Don't drink</div></div>
+        <div class="option" data-points="2" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="small">Less than 10 times a year</div></div>
+        <div class="option" data-points="3" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="small">1 - 3 times a month</div></div>
+        <div class="option" data-points="4" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="small">4 - 10 times a Month</div></div>
+        <div class="option" data-points="5" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="small">3 -5 times a week</div></div>
+        <div class="option" data-points="6" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="small">Alternate days</div></div>
+        <div class="option" data-points="7" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="small">Everyday</div></div>
+    </div>
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_rose)">Question 9: If you drink, what is your go to beverage type?</p>
+        <div class="option" data-points="03" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">I don't Drink</div></div>
+        <div class="option" data-points="06" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">Breezer's</div></div>
+        <div class="option" data-points="09" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">No Preference</div></div>
+        <div class="option" data-points="12" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">Beer</div></div>
+        <div class="option" data-points="15" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">Wine</div></div>
+        <div class="option" data-points="18" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">Brandy</div></div>
+        <div class="option" data-points="21" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">Rum</div></div>
+        <div class="option" data-points="24" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">Whiskey</div></div>
+        <div class="option" data-points="27" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">Normal Cocktails</div></div>
+        <div class="option" data-points="30" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">Gin</div></div>
+        <div class="option" data-points="33" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">Vodka</div></div>
+        <div class="option" data-points="36" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">Strong Cocktails like LIT</div></div>
+        <div class="option" data-points="39" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">Desi Indian type</div></div>
+    </div>
+
+
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_blood)">Question 10: What is you Monthly allowance? If You don't have a fixed allowance- how much do you generally tend to spend in a month?</p>
+        <div class="option" data-points="03" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">3k or below</div></div>
+        <div class="option" data-points="06" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">4k - 6k</div></div>
+        <div class="option" data-points="09" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">7k - 10k</div></div>
+        <div class="option" data-points="12" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">11k - 15k</div></div>
+        <div class="option" data-points="15" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">16k - 20k</div></div>
+        <div class="option" data-points="18" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">More than 20k</div></div>
+
+    </div>
+
+
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+<!-- --------------------------------Cluster 3 - other personal factors - 4 questions --------------------->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_violet)">Question 11: If someone offers you alcohol/you have an option of drinking alcohol, would you take it-</p>
+        <div class="option" data-points="02" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="verySmall">Never</div></div>
+        <div class="option" data-points="04" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="verySmall">Probably not</div></div>
+        <div class="option" data-points="06" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="verySmall">Maybe</div></div>
+        <div class="option" data-points="08" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="verySmall">Most Likely yes</div></div>
+        <div class="option" data-points="10" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="verySmall">Defnitely Yes</div></div>
+    </div>
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_rose)">Question 12: Do you have trouble sitting still in one place even for small durations? Do you have trouble concentrating?</p>
+        <div class="option" data-points="1" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">Generally No</div></div>
+        <div class="option" data-points="2" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">Not Sure</div></div>
+        <div class="option" data-points="3" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">Generally yes</div></div>
+    </div>
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_desert)">Question 13: Have you experienced any challenging or distressing events in your life that have significantly impacted you?</p>
+        <div class="option" data-points="1" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="large">No, I have not experienced any challenging events</div></div>
+        <div class="option" data-points="2" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="large">Yes, I have experienced some challenging events, but they did not have a major impact on me.</div></div>
+        <div class="option" data-points="3" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="large">Yes, I have experienced challenging events, and they have moderately affected me.</div></div>
+        <div class="option" data-points="4" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="large">Yes, I have experienced challenging events, and they have significantly impacted me.</div></div>
+    </div>
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_heat)">Question 14: Have you ever struggled with any form of addiction in your life?</p>
+        <div class="option" data-points="1" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">No</div></div>
+        <div class="option" data-points="3" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">Unsure</div></div>
+        <div class="option" data-points="3" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">Yes</div></div>
+    </div>
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+<!-- --------------------------------Cluster 4 - family and environment - 5 questions --------------------->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_violet)">Question 15: What parenting style best describes how you were raise?</p>
+        <div class="option" data-points="2" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="large">Authoritative - Balanced approach with clear rules and expectations, warmth, and responsiveness.</div></div>
+        <div class="option" data-points="4" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="large">Authoritarian - Strict rules and high control, little warmth or responsiveness.</div></div>
+        <div class="option" data-points="6" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="large">Permissive - Few rules and low control, high warmth and responsiveness.</div></div>
+        <div class="option" data-points="8" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="large">Uninvolved - Low control, low warmth, and responsiveness, little involvement in child's life.</div></div>
+    </div>    
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_desert)">Question 16: What is your parents'/guardian's  stand on Alcohol</p>
+        <div class="option" data-points="1" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);"><div class="small">Strictly Against</div></div>
+        <div class="option" data-points="2" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);"><div class="small">Prefer not to have it</div></div>
+        <div class="option" data-points="3" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);"><div class="small">Neither for nor against</div></div>
+        <div class="option" data-points="4" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);"><div class="small">Okay is moderation</div></div>
+        <div class="option" data-points="5" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);"><div class="small">Okay in all situations</div></div>
+        <div class="option" data-points="6" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);"><div class="small">Want me to drink more</div></div>
+
+    </div>  
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_blood)">Question 17: Thinking about your family environment while growing up, would you say it was generally healthy or unhealthy?</p>
+        <div class="option" data-points="1" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">Healthy</div></div>
+        <div class="option" data-points="2" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">Mostly Healthy</div></div>
+        <div class="option" data-points="3" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">Mostly Unhealthy</div></div>
+        <div class="option" data-points="4" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="small">Mostly Unhealthy</div></div>
+    </div>  
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_sun)">Question 18: Is anyone among your parents/grandparents a heavy drinker/ has or have had a history in (alcohol) addiction?</p>
+        <div class="option" data-points="1" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="small">No</div></div>
+        <div class="option" data-points="2" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="small">Unsure, tending towards no</div></div>
+        <div class="option" data-points="3" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="small">Unsure, tending towards yes</div></div>
+        <div class="option" data-points="4" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="small">Yes</div></div>
+    </div>  
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_rose)">Question 19: What is your perception of your parents'/Guardian's  attitude towards drinking alcohol in the home?</p>
+        <div class="option" data-points="1" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="large">My parents discourage me from drinking at home</div></div>
+        <div class="option" data-points="2" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="large">My parents have strict rules against underage drinking and model responsible alcohol consumption</div></div>
+        <div class="option" data-points="3" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="large">I'm not sure or it varies</div></div>
+        <div class="option" data-points="4" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="large">My parents encourage me to drink at home</div></div>
+    </div>  
+
+
+
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+<!-- --------------------------------Cluster 5 - word association - 3 questions - individual select top 3--------------------->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+<!-- --------------------------------Cluster 6 - Character/personality section - 4 questions - individual select top 3--------------------->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_violet)">Question 20: Rate your current fascination with alcohol</p>
+        <div class="option" data-points="02" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="small">Not fascinated at all</div></div>
+        <div class="option" data-points="04" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="small">Slightly fascinated</div></div>
+        <div class="option" data-points="06" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="small">Moderately fascinated</div></div>
+        <div class="option" data-points="08" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="small">Very fascinated</div></div>
+        <div class="option" data-points="10" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="small">Extremely fascinated</div></div>
+    </div> 
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_sun)">Question 21: How do you typically handle challenge or setbacks in life?</p>
+        <div class="option" data-points="1" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="large">I tend to bounce back quickly, finding solutions and support when needed</div></div>
+        <div class="option" data-points="2" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="large">I usually find ways to overcome difficulties, although it may take some time</div></div>
+        <div class="option" data-points="3" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="large">I often feel overwhelmed by setbacks but eventually manage to cope</div></div>
+        <div class="option" data-points="4" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="large">I struggle to recover from setbacks and may need significant support</div></div>
+        <div class="option" data-points="4" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="large">I avoid confronting challenges and tend to ignore them until they go away</div></div>
+
+    </div> 
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_heat)">Question 22: How do you usually react when someone (friend/family) offers you alcohol when you weren't planning on having any?</p>
+        <div class="option" data-points="03" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="large">I feel obligated to accept it to avoid disappointing them</div></div>
+        <div class="option" data-points="06" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="large">I reluctantly accept it to avoid conflict or awkwardness</div></div>
+        <div class="option" data-points="09" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="large">I consider their offer but often decline if I don't want to drink</div></div>
+        <div class="option" data-points="12" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="large">I politely decline without feeling pressured to accept</div></div>
+        <div class="option" data-points="15" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="large">I confidently refuse alcohol without any hesitation or concern for others' opinions</div></div>
+        <div class="option" data-points="18" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="large">Not Possible- I'll never pass up a drink</div></div>
+    </div> 
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_rose)">Question 23: How do you typically approach new adventurous activities?</p>
+        <div class="option" data-points="1" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="large">I prefer safe and familiar activities, avoiding unnecessary risks</div></div>
+        <div class="option" data-points="2" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="large">I cautiously explore new activities but avoid anything too risky</div></div>
+        <div class="option" data-points="3" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="large">I enjoy trying new things occasionally, even if they involve some level of risk</div></div>
+        <div class="option" data-points="4" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="large">I actively seek out new and exciting experiences, embracing risk as part of the adventure</div></div>
+        <div class="option" data-points="5" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="large">I constantly seek thrill and excitement, often engaging in risky behaviours without much consideration</div></div>
+
+    </div> 
+
+
+
+    <!-- score for section 1 --------------------------------------------->
+    <!-- <div id="points1">
+        Section One Points: <span id="section1Points">0</span>
+    </div> -->
+</div>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+<!-- --------------------------------section 2 neurotticism -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+
+<!-- Section Two -->
+<p></p>
+<p></p>
+<div class="mainQuestion">Select the options which best describes you.</div>
+<div id="section2">
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_desert)">Question 1: I get stressed out easily.</p>
+        <div class="option" data-points="1" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="verySmall">Strongly Disagree</div></div>
+        <div class="option" data-points="2" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="verySmall">Disagree</div></div>
+        <div class="option" data-points="3" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="verySmall">Neutral</div></div>
+        <div class="option" data-points="4" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="verySmall">Agree</div></div>
+        <div class="option" data-points="5" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="verySmall">Strongly Agree</div></div>
+    </div>
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_violet)">Question 2: I am relaxed most of the time.</p>
+        <!-- inverted -->
+        <div class="option" data-points="5" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);"><div class="verySmall">Strongly Disagree</div></div>
+        <div class="option" data-points="4" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);"><div class="verySmall">Disagree</div></div>
+        <div class="option" data-points="3" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);"><div class="verySmall">Neutral</div></div>
+        <div class="option" data-points="2" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);"><div class="verySmall">Agree</div></div>
+        <div class="option" data-points="1" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);"><div class="verySmall">Strongly Agree</div></div>
+    </div>
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_blood)">Question 3: I worry about things.</p>
+        <div class="option" data-points="1" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">Strongly Disagree</div></div>
+        <div class="option" data-points="2" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">Disagree</div></div>
+        <div class="option" data-points="3" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">Neutral</div></div>
+        <div class="option" data-points="4" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">Agree</div></div>
+        <div class="option" data-points="5" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">Strongly Agree</div></div>
+    </div>
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_sun)">Question 4: I find myself feeling down quite regularly.</p>
+        <div class="option" data-points="1" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="verySmall">Strongly Disagree</div></div>
+        <div class="option" data-points="2" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="verySmall">Disagree</div></div>
+        <div class="option" data-points="3" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="verySmall">Neutral</div></div>
+        <div class="option" data-points="4" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="verySmall">Agree</div></div>
+        <div class="option" data-points="5" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="verySmall">Strongly Agree</div></div>
+    </div>
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_violet)">Question 5: I am easily disturbed.</p>
+        <div class="option" data-points="1" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="verySmall">Strongly Disagree</div></div>
+        <div class="option" data-points="2" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="verySmall">Disagree</div></div>
+        <div class="option" data-points="3" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="verySmall">Neutral</div></div>
+        <div class="option" data-points="4" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="verySmall">Agree</div></div>
+        <div class="option" data-points="5" style="--option-color: var(--option-purple); --option-color-tint: var(--option-purple-tint);">  <div class="verySmall">Strongly Agree</div></div>
+    </div>
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_heat)">Question 6: I get upset easily.</p>
+        <div class="option" data-points="1" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">Strongly Disagree</div></div>
+        <div class="option" data-points="2" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">Disagree</div></div>
+        <div class="option" data-points="3" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">Neutral</div></div>
+        <div class="option" data-points="4" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">Agree</div></div>
+        <div class="option" data-points="5" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">Strongly Agree</div></div>
+    </div>
+
+    <div class="question_block">
+        <p class="question" style="background-image: var(--blend_rose)">Question 7: I have frequent mood swings.</p>
+        <div class="option" data-points="1" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">Strongly Disagree</div></div>
+        <div class="option" data-points="2" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">Disagree</div></div>
+        <div class="option" data-points="3" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">Neutral</div></div>
+        <div class="option" data-points="4" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">Agree</div></div>
+        <div class="option" data-points="5" style="--option-color: var(--option-red); --option-color-tint: var(--option-red-tint);">  <div class="verySmall">Strongly Agree</div></div>
+    </div>
+
+<!-- most bottom margin gapping is 72 px- last one adjusted due to calculate score button  -->
+
+    <div class="question_block" style="margin-bottom: 50px;">
+        <p class="question" style="background-image: var(--blend_sun)">Question 8: I get irritated easily</p>
+        <div class="option" data-points="1" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="verySmall">Strongly Disagree</div></div>
+        <div class="option" data-points="2" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="verySmall">Disagree</div></div>
+        <div class="option" data-points="3" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="verySmall">Neutral</div></div>
+        <div class="option" data-points="4" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="verySmall">Agree</div></div>
+        <div class="option" data-points="5" style="--option-color: var(--option-yellow); --option-color-tint: var(--option-yellow-tint);">  <div class="verySmall">Strongly Agree</div></div>
+    </div>
+
+<!-- END OF QIZ______________________________________________--------___________________ -->
+
+
+
+
+
+
+
+
+
+    <!-- temporary potion AND BUTTON_______________________________-->
+   
+    <!-- <div id="points2">
+        Section Two Points: <span id="section2Points">0</span>
+    </div>
+</div>
+
+Final Score: <span id="sectionTotalPoints">0</span> 
+<p> -->
+
+
+<!-- end of temporary potion -->
+
+
+
+<center>
+
+<button class="button2" id="doneButton">Calculate my Chances</button>
+</center>
+
+
+
+
+
+<!-- ---------------------------------------______________________________________SCORE CARD Part -->
+
+<div id="score_card_container" class="score_card_container">
+<center>
+    <div id="img_result_container" class="img_result_container"> 
+        <div class="img_container"><img id="result_img" class="result_img" src="assets/brainy0.png"> </div>
+        <p id="result_percent" class="result_percent" >40 %</p>
+        <p id="result_classification_left" class="result_classification_left">the classification</p>
+    </div>
+
+    <div class="message_container">
+        <p id="result_classification_right" class="result_classification_right">the classification</p>
+        <p id="result_message"  class="result_message">Worem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, 
+            dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem 
+            sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, 
+            sit amet feugiat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+            per inceptos himenaeos. Praesent auctor purus luctus enim egestas, ac </p> <br>
+            
+    </div>
+</center>
+</div>  
+
+
+
+
+<!-- _______________________________________________________________________________________END OF SCORE CARD -->
+
+
+<!--START of ------------------- REFRESH AND LINKS ______________________________________________________-->
+
+
+<center>
+<button id="refreshButton" class="button2" style="display: none;">Refresh</button>
+
+
+
+
+<div id="containerLinks" class="container">
+    <div class="heading">Useful Links</div>
+    <a class="links" href="https://www.niaaa.nih.gov/about-niaaa/directors-page/niaaa-directors-blog/alcohol-awareness-month-raising-awareness-about-dangers-alcohol-use-among-teens"><div class="inner-div"><img class="image" src="assets/link3.jpg">Raising Awareness about the Dangers of Alcohol Use Among Teens</div> </a>
+    <a class="links" href="https://www.niaaa.nih.gov/alcohol-and-your-brain-virtual-reality-experience"><div class="inner-div"><img class="image" src="assets/link1.jpg">Alcohol and Your Brain: A Virtual Reality Experience  </div></a>
+    <a class="links" href="https://indianhelpline.com/de-addiction-helpline"><div class="inner-div"><img class="image" src="assets/link2.jpg">Indian Hepline numbers and deaddiction centers</div></a>
+  </div>
+
+</center>
+
+
+<!-- _______________________________________________________________________________________END OF REFRESH AND LINKS -->
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+<!-- --------------------------------section body part centally -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------ -->
+
+</div>
+
+
+
+
+<!-- Java ink -->
+<script src="quiz06.js"></script>
+
+</body>
+</html>
